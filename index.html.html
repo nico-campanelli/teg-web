@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TEG | Agencia de Meta Ads en Argentina</title>
+<meta name="description" content="TEG gestiona tus campañas de Meta Ads para que conviertas más consultas en ventas. Más de 20 clientes activos en Argentina.">
+<meta property="og:title" content="TEG | Meta Ads que venden">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{--bg:#050619;--sf:#0b0e33;--bd:#1b2060;--navy:#16208f;--navy2:#2231c4;--fg:#f1f3ff;--mut:#9aa0cf;--ice:#a5e8ff;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--sy:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(5rem + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--fg);font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--bg)}
+#bar{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);height:3px;z-index:80;background:var(--ice);transform-origin:left;transform:scaleX(0)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:700;border-radius:.9rem;padding:.9rem 1.5rem;background:var(--navy);border:1px solid #3140d6;color:#fff;transition:background .25s,transform .25s;cursor:pointer}
+.btn:hover{background:var(--navy2);transform:translateY(-2px)}
+.btn-o{background:transparent;border-color:var(--bd)}.btn-o:hover{background:var(--sf);border-color:#3140d6}
+.ice{color:var(--ice)}
+.blob{position:absolute;border-radius:50%;filter:blur(110px);background:var(--navy);opacity:.6;pointer-events:none;transform:translateY(calc(var(--sy)*-.12px))}
+.w{display:inline-block;opacity:0;transform:translateY(40px) rotate(3deg);animation:w .8s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes w{to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(32px) scale(.98);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+.tile{position:relative;background:var(--sf);border:1px solid var(--bd);border-radius:1.5rem;overflow:hidden}
+.tile::after{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),rgba(60,80,255,.28),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.tile:hover::after{opacity:1}
+.mq{display:flex;gap:3rem;width:max-content;animation:mq 28s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+.pain{transition:opacity .15s linear,transform .15s linear}
+.pbtn{padding:.8rem 1.2rem;border:1px solid var(--bd);border-radius:999px;background:var(--sf);font-weight:700;transition:.25s}.pbtn:hover{border-color:#3140d6;transform:translateY(-2px)}.pbtn.on{background:var(--navy);border-color:#3140d6}
+.cbtn{flex:0 0 auto;text-align:left;padding:.9rem 1.1rem;border:1px solid var(--bd);border-radius:1rem;background:var(--sf);display:flex;flex-direction:column;transition:.25s}.cbtn small{color:var(--mut)}.cbtn.on,.cbtn:hover{border-color:#3140d6;background:var(--navy)}
+.swap{animation:sw .45s cubic-bezier(.2,.8,.2,1)}@keyframes sw{from{opacity:0;transform:translateY(14px)}}
+input[type=range]{accent-color:#a5e8ff;padding:0;border:0;background:transparent;margin-top:.5rem}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}.faq-a>div{overflow:hidden}.open .faq-a{grid-template-rows:1fr}.open .chev{transform:rotate(180deg)}.chev{transition:transform .3s}
+input,select,textarea{width:100%;background:var(--bg);border:1px solid var(--bd);border-radius:.85rem;padding:.8rem 1rem;color:var(--fg);outline:none;transition:border-color .2s}
+input:focus,select:focus,textarea:focus{border-color:#3140d6}
+.err{color:#ff7b8a;font-size:.8rem;margin-top:.25rem;min-height:1rem}
+:focus-visible{outline:2px solid var(--ice);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.w{opacity:1;transform:none}.pain{opacity:1!important}.mq{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<a href="#contacto" class="sr-only focus:not-sr-only focus:fixed focus:z-[90] focus:top-2 focus:left-2 btn">Ir al formulario</a>
+
+<header class="fixed left-0 right-0 z-50" style="top:env(safe-area-inset-top,0px)">
+  <div id="navbar" class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between transition-all">
+    <a href="#inicio" class="text-2xl font-extrabold tracking-tight">TEG</a>
+    <nav class="hidden md:flex gap-8 text-sm font-semibold text-[var(--mut)]" aria-label="Principal">
+      <a class="hover:text-white" href="#porque-teg">Por qué TEG</a><a class="hover:text-white" href="#resultados">Resultados</a><a class="hover:text-white" href="#proceso">Proceso</a><a class="hover:text-white" href="#faq">FAQ</a>
+    </nav>
+    <a href="#contacto" class="btn hidden md:inline-flex !py-2.5 text-sm">Quiero empezar</a>
+    <button id="burger" class="md:hidden p-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mmenu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path id="bi" d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div id="mmenu" class="md:hidden hidden mx-4 tile p-5 flex-col gap-4 font-semibold">
+    <a href="#porque-teg">Por qué TEG</a><a href="#resultados">Resultados</a><a href="#proceso">Proceso</a><a href="#faq">FAQ</a><a href="#contacto" class="btn">Quiero empezar</a>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="relative min-h-[92vh] flex items-center px-5 pt-28 pb-16 overflow-hidden">
+  <div class="blob w-[28rem] h-[28rem] -top-20 -left-32"></div><div class="blob w-80 h-80 bottom-0 right-0 opacity-40"></div>
+  <div class="relative max-w-5xl mx-auto">
+    <p class="rv inline-block text-xs font-bold px-4 py-2 rounded-full border border-[var(--bd)] bg-[var(--sf)]">+20 clientes activos · Meta Ads · Argentina</p>
+    <h1 id="h1" class="mt-6 text-[2.6rem] sm:text-7xl font-extrabold leading-[1.02] tracking-tight" data-t="Tu publicidad, <b class='ice'>trabajando para vender.</b> Tu tiempo, para tu negocio."></h1>
+    <p class="rv mt-7 text-lg text-[var(--mut)] max-w-xl">Nos encargamos de tus campañas de Facebook e Instagram Ads: contenido, anuncios y seguimiento para que más consultas terminen en ventas.</p>
+    <div class="rv mt-9 flex flex-col sm:flex-row gap-3"><a href="#contacto" class="btn">Quiero más ventas →</a><a href="#resultados" class="btn btn-o">Ver resultados</a></div>
+  </div>
+</section>
+
+<div class="border-y border-[var(--bd)] py-5 overflow-hidden" aria-hidden="true">
+  <div class="mq text-sm font-bold text-[var(--mut)] uppercase tracking-widest" id="mq"></div>
+</div>
+
+<section class="py-24 px-5">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="rv text-3xl sm:text-5xl font-extrabold tracking-tight">¿Qué te está frenando hoy?</h2><p class="rv mt-3 text-[var(--mut)]">Tocá lo que más te pasa y mirá cómo lo resolvemos.</p>
+    <div id="pains" class="rv mt-8 flex flex-wrap gap-3"></div><div id="pain-out" class="tile mt-5 p-7 min-h-[12rem]" aria-live="polite"></div>
+    
+  </div>
+</section>
+
+<section id="porque-teg" class="py-24 px-5">
+  <div class="max-w-6xl mx-auto">
+    <p class="rv text-sm font-bold ice">POR QUÉ TEG Y NO OTRA</p>
+    <h2 class="rv mt-2 text-3xl sm:text-5xl font-extrabold tracking-tight max-w-3xl">No vendemos “gestión de redes”. Vendemos clientes.</h2>
+    <div id="why" class="mt-12 grid md:grid-cols-6 gap-4"></div>
+  </div>
+</section>
+
+<section id="resultados" class="py-24 px-5">
+  <div class="max-w-6xl mx-auto">
+    <p class="rv text-sm font-bold ice">RESULTADOS</p>
+    <h2 class="rv mt-2 text-3xl sm:text-5xl font-extrabold tracking-tight">Clientes reales, números reales.</h2>
+    <div id="cases" class="rv mt-10 grid lg:grid-cols-[17rem_1fr] gap-4"></div>
+  </div>
+</section>
+
+<section id="proceso" class="py-24 px-5">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="rv text-3xl sm:text-5xl font-extrabold tracking-tight">Así trabajamos</h2>
+    <div id="tl" class="relative mt-14 pl-10">
+      <div class="absolute left-[13px] top-0 bottom-0 w-[2px] bg-[var(--bd)]"></div>
+      <div id="line" class="absolute left-[13px] top-0 bottom-0 w-[2px] bg-[var(--ice)] origin-top scale-y-0"></div>
+      <div id="steps" class="space-y-12"></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-24 px-5"><div class="max-w-3xl mx-auto">
+  <h2 class="rv text-3xl sm:text-4xl font-extrabold tracking-tight">Preguntas frecuentes</h2>
+  <p class="rv mt-3 text-[var(--mut)]">Tocá una pregunta y mirá la respuesta en video.</p><div id="faqs" class="mt-8 grid gap-3"></div></div>
+</section>
+
+<section id="contacto" class="relative py-24 px-5 overflow-hidden">
+  <div class="blob w-96 h-96 bottom-0 right-0 opacity-50"></div>
+  <div class="relative max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
+    <div class="rv">
+      <p class="text-sm font-bold ice">HABLEMOS</p>
+      <h2 class="mt-2 text-3xl sm:text-5xl font-extrabold tracking-tight">Contanos de tu negocio y armamos tu plan.</h2>
+      <p class="mt-5 text-[var(--mut)]">Te respondemos por WhatsApp en menos de 24 horas.</p>
+    </div>
+    <form id="form" class="rv tile p-6 sm:p-8 space-y-4" novalidate>
+      <div><label for="nombre" class="text-sm font-semibold">Nombre y apellido</label><input id="nombre" name="nombre" autocomplete="name"><p class="err" data-for="nombre"></p></div>
+      <div><label for="tel" class="text-sm font-semibold">WhatsApp</label><input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="351 555 1234"><p class="err" data-for="tel"></p></div>
+      <div><label for="mail" class="text-sm font-semibold">Email</label><input id="mail" name="mail" type="email" autocomplete="email"><p class="err" data-for="mail"></p></div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div><label for="rubro" class="text-sm font-semibold">Tu negocio</label><select id="rubro" name="rubro"><option value="">Elegí</option><option>Ecommerce</option><option>Emprendimiento de productos</option><option>Servicios</option><option>Gastronomía</option><option>Otro</option></select><p class="err" data-for="rubro"></p></div>
+        <div><label for="inv" class="text-sm font-semibold">Inversión mensual en ads</label><select id="inv" name="inv"><option value="">Elegí</option><option>Todavía no invierto</option><option>Hasta $500.000</option><option>$500.000 a $1.500.000</option><option>Más de $1.500.000</option></select><p class="err" data-for="inv"></p></div>
+      </div>
+      <div><label for="msg" class="text-sm font-semibold">Tu mayor problema hoy (opcional)</label><textarea id="msg" name="msg" rows="3" maxlength="500"></textarea></div>
+      <button class="btn w-full" type="submit">Enviar por WhatsApp</button>
+      <p id="ok" class="text-sm font-semibold ice hidden" role="status">¡Listo! Se abrió WhatsApp con tu mensaje.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="px-5 py-10 border-t border-[var(--bd)] text-sm text-[var(--mut)]">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row gap-4 justify-between items-center">
+    <span class="text-xl font-extrabold text-white">TEG</span>
+    <span>Agencia de Meta Ads · Argentina</span>
+    <span class="flex gap-5"><a id="wa" href="#" target="_blank" rel="noopener" class="hover:text-white">WhatsApp</a><a href="https://instagram.com/teg.ads" target="_blank" rel="noopener" class="hover:text-white">@teg.ads</a></span>
+  </div>
+  <p class="max-w-6xl mx-auto mt-6 text-xs text-center sm:text-left">© <span id="yr"></span> TEG. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+// ===== EDITÁ ESTOS DATOS =====
+const WHATSAPP="5493510000000"; // código país + área + número, sin + ni espacios
+const MARQUEE=["Tiago","Yasir","VapeShop","Ezequiel","Lucas","Tobias","Luzz"]; // clientes (historias destacadas de @teg.ads)
+// Datos de EJEMPLO: reemplazar por los números reales de tus clientes (montos en pesos argentinos).
+// v = evolución mensual (mes 1 = 100). ig = link a la historia del cliente.
+const CASES=[
+ {n:"Tienda de indumentaria",t:"Ecommerce",l:"ventas vs. mes 1",v:[100,128,165,190,246,312],line:"Inversión $900.000/mes · ROAS 4,8x · costo por compra −38%",ig:"https://instagram.com/teg.ads"},
+ {n:"Estudio de servicios",t:"Servicios",l:"consultas vs. mes 1",v:[100,150,210,260,300,340],line:"Inversión $450.000/mes · costo por consulta −52% · 68% calificadas",ig:"https://instagram.com/teg.ads"},
+ {n:"Emprendimiento de productos",t:"Emprendimiento",l:"pedidos vs. mes 1",v:[100,115,140,180,225,260],line:"Inversión $300.000/mes · ROAS 3,9x · costo por pedido −44%",ig:"https://instagram.com/teg.ads"}];
+const PAINS=[["Me falta tiempo","Te sacamos la publicidad de encima: nosotros armamos, lanzamos y controlamos tus campañas.","No tengo tiempo para manejar mis publicidades."],["No sé manejar Meta Ads","Nos ocupamos de toda la parte técnica para que no tires plata probando botones.","No sé cómo manejar Meta Ads."],["Mi contenido no funciona","Vos grabás, nosotros lo editamos y lo pautamos con anuncios pensados para vender.","Mi contenido no funciona."],["No tengo datos orgánicos","Arrancamos con campañas de prueba para generar datos y decidir con números.","No tengo datos orgánicos para empezar."],["No convierto consultas en ventas","Ordenamos el seguimiento para que más consultas terminen en compra.","Me llegan consultas pero no las convierto en ventas."]];
+const TIKTOK="https://www.tiktok.com/@teg.ads"; // link por defecto hasta que pegues el de cada video
+const WHY=[["Foco en ventas","Medimos todo contra una sola pregunta: ¿cuánto vendés por cada peso invertido?","md:col-span-4"],["+20","clientes activos confían en nosotros.","md:col-span-2 big"],["Contenido incluido","Vos grabás, nosotros lo editamos. Reels y anuncios listos para pautar.","md:col-span-3"],["Del anuncio al cierre","Te ayudamos con el seguimiento para que las consultas se conviertan en ventas.","md:col-span-3"],["Transparencia total","Reportes claros y tu cuenta publicitaria siempre es tuya.","md:col-span-3"],["Trato directo","Hablás con quien maneja tus campañas, sin intermediarios.","md:col-span-3"]];
+const STEPS=[["Conversamos","Entendemos tu negocio, tu oferta y tus números."],["Estrategia y contenido","Definimos público, mensaje y creatividades."],["Lanzamos","Campañas en marcha con seguimiento diario."],["Optimizamos y escalamos","Probamos, medimos y potenciamos lo que funciona."]];
+// [pregunta, link del video (TikTok o Reel), plataforma]. Si el link está vacío, abre tu perfil de TikTok.
+const FAQ=[["¿Cuánto tengo que invertir en publicidad?","","TikTok"],["¿En cuánto tiempo veo resultados?","","TikTok"],["¿Trabajan con negocios que recién empiezan?","","TikTok"],["¿Cómo es el trato y el contrato?","","TikTok"]];
+
+const $=s=>document.querySelector(s);
+// Titular palabra por palabra
+(()=>{const h=$("#h1");const tmp=document.createElement("div");tmp.innerHTML=h.dataset.t;let i=0;const walk=(n,cls)=>{n.childNodes.forEach(c=>{if(c.nodeType===3){c.textContent.split(/(\s+)/).forEach(w=>{if(!w.trim()){h.append(w);return}const s=document.createElement("span");s.className="w "+cls;s.style.animationDelay=(i++*70+150)+"ms";s.textContent=w;h.append(s)})}else walk(c,"ice")})};walk(tmp,"")})();
+$("#mq").innerHTML=[...MARQUEE,...MARQUEE,...MARQUEE,...MARQUEE].map(x=>`<span>${x} <span class="ice">✦</span></span>`).join("");
+const pOut=$("#pain-out");
+const showPain=i=>{const[t,d,m]=PAINS[i];document.querySelectorAll("#pains button").forEach((b,j)=>{b.classList.toggle("on",j===i);b.setAttribute("aria-pressed",j===i)});pOut.innerHTML=`<div class="swap"><p class="text-xs font-bold ice uppercase">Cómo lo resolvemos</p><h3 class="mt-2 text-2xl sm:text-3xl font-bold">${t}</h3><p class="mt-3 text-[var(--mut)] max-w-xl">${d}</p><a href="#contacto" data-pain="${m}" class="btn mt-6">Quiero resolver esto →</a></div>`};
+$("#pains").innerHTML=PAINS.map((p,i)=>`<button class="pbtn" data-i="${i}" aria-pressed="false">${p[0]}</button>`).join("");
+pOut.innerHTML=`<p class="text-[var(--mut)]">Elegí una opción y te mostramos qué hacemos en tu caso.</p>`;
+$("#pains").onclick=e=>{const b=e.target.closest("button");if(b)showPain(+b.dataset.i)};
+pOut.onclick=e=>{const a=e.target.closest("a[data-pain]");if(a)document.getElementById("msg").value=a.dataset.pain};
+$("#why").innerHTML=WHY.map(([t,d,c])=>`<article class="tile rv p-7 ${c}">${c.includes("big")?`<div class="text-7xl font-extrabold ice">${t}</div><p class="mt-2 text-[var(--mut)]">${d}</p>`:`<h3 class="text-xl font-bold">${t}</h3><p class="mt-2 text-[var(--mut)]">${d}</p>`}</article>`).join("");
+// Visor de casos: elegís un cliente, el gráfico se dibuja y podés deslizar mes a mes
+const cs=$("#cases"),X=i=>30+i*108,Y=(v,mx)=>190-v/mx*160;let cur=0,raf;
+cs.innerHTML=`<div id="ctabs" class="flex lg:flex-col gap-2 overflow-x-auto pb-1">${CASES.map((c,i)=>`<button class="cbtn" data-i="${i}"><b>${c.n}</b><small>${c.t}</small></button>`).join("")}</div><div class="tile p-6 sm:p-8"><div class="flex flex-wrap items-end justify-between gap-3"><div><p id="cl" class="text-sm text-[var(--mut)]"></p><p id="cn" class="text-6xl sm:text-7xl font-extrabold ice leading-none"></p></div><p id="cm" class="font-bold"></p></div><svg id="cg" viewBox="0 0 600 220" class="w-full mt-4" role="img" aria-label="Evolución mensual"></svg><input id="cr" type="range" min="0" max="5" step="0.01" value="5" aria-label="Mes"><p class="mt-1 text-xs text-[var(--mut)]">Deslizá para ver la evolución mes a mes</p><p id="ci" class="mt-4 text-sm font-semibold"></p><a id="cj" target="_blank" rel="noopener" class="btn btn-o mt-5 !py-2.5 text-sm">Ver historia del cliente ↗</a></div>`;
+const drawCase=m=>{const c=CASES[cur],v=c.v,mx=Math.max(...v),k=Math.min(5,Math.floor(m)),f=m-k,p=[];for(let j=0;j<=k;j++)p.push([X(j),Y(v[j],mx)]);let val=v[k];if(f>0&&k<5){val=v[k]+(v[k+1]-v[k])*f;p.push([X(k)+f*108,Y(val,mx)])}const e=p[p.length-1],pts=p.map(q=>q.join(",")).join(" ");
+ $("#cg").innerHTML=[0,1,2].map(g=>`<line x1="30" x2="570" y1="${40+g*75}" y2="${40+g*75}" stroke="var(--bd)"/>`).join("")+v.map((_,j)=>`<text x="${X(j)}" y="214" text-anchor="middle" fill="var(--mut)" font-size="12">Mes ${j+1}</text>`).join("")+`<line x1="30" x2="570" y1="${Y(100,mx)}" y2="${Y(100,mx)}" stroke="var(--mut)" stroke-dasharray="6 6"/><text x="570" y="${Y(100,mx)-8}" text-anchor="end" fill="var(--mut)" font-size="12">Antes de TEG</text><polygon points="${pts} ${e[0]},190 30,190" fill="rgba(165,232,255,.12)"/><polyline points="${pts}" fill="none" stroke="var(--ice)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="${e[0]}" cy="${e[1]}" r="7" fill="var(--ice)" stroke="var(--bg)" stroke-width="3"/>`;
+ $("#cn").textContent="+"+Math.round((val/100-1)*100)+"%";$("#cm").textContent="Mes "+(Math.round(m)+1)};
+const playCase=()=>{cancelAnimationFrame(raf);if(matchMedia("(prefers-reduced-motion:reduce)").matches){$("#cr").value=5;return drawCase(5)}const t0=performance.now(),f=n=>{const q=Math.min((n-t0)/1700,1),m=5*(1-Math.pow(1-q,3));$("#cr").value=m;drawCase(m);if(q<1)raf=requestAnimationFrame(f)};raf=requestAnimationFrame(f)};
+const pickCase=(i,play=true)=>{cur=i;const c=CASES[i];document.querySelectorAll(".cbtn").forEach((b,j)=>b.classList.toggle("on",j===i));$("#cl").textContent=c.l;$("#ci").textContent=c.line;$("#cj").href=c.ig;play?playCase():(drawCase(5))};
+$("#ctabs").onclick=e=>{const b=e.target.closest("button");if(b)pickCase(+b.dataset.i)};
+$("#cr").oninput=e=>{cancelAnimationFrame(raf);drawCase(+e.target.value)};
+pickCase(0,false);
+new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){playCase();o.disconnect()}},{threshold:.4}).observe(cs);
+$("#steps").innerHTML=STEPS.map(([t,d],i)=>`<div class="step relative opacity-30 transition-opacity duration-500"><span class="absolute -left-10 top-0 w-7 h-7 rounded-full grid place-items-center text-xs font-bold bg-[var(--navy)] border border-[#3140d6]">${i+1}</span><h3 class="text-xl font-bold">${t}</h3><p class="mt-1 text-[var(--mut)]">${d}</p></div>`).join("");
+$("#faqs").innerHTML=FAQ.map(([q,u,pl])=>`<a class="tile rv group p-5 flex items-center gap-4" href="${u||TIKTOK}" target="_blank" rel="noopener"><span class="shrink-0 w-12 h-12 rounded-full grid place-items-center bg-[var(--navy)] border border-[#3140d6] transition-transform group-hover:scale-110"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg></span><span class="font-bold">${q}</span><span class="ml-auto shrink-0 text-xs text-[var(--mut)]">Ver en ${pl} ↗</span></a>`).join("");
+$("#yr").textContent=new Date().getFullYear();$("#wa").href="https://wa.me/"+WHATSAPP;
+
+// Menú móvil
+const mm=$("#mmenu"),bg=$("#burger");
+const tg=f=>{const o=f??mm.classList.contains("hidden");mm.classList.toggle("hidden",!o);mm.classList.toggle("flex",o);bg.setAttribute("aria-expanded",o);$("#bi").setAttribute("d",o?"M6 6l12 12M18 6L6 18":"M4 7h16M4 12h16M4 17h16")};
+bg.onclick=()=>tg();mm.onclick=e=>{if(e.target.closest("a"))tg(false)};addEventListener("keydown",e=>{if(e.key==="Escape")tg(false)});
+
+// Animaciones ligadas al scroll
+const bar=$("#bar"),nb=$("#navbar"),pains=[...document.querySelectorAll(".pain")],steps=[...document.querySelectorAll(".step")],line=$("#line"),tl=$("#tl");
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+let tick=false;
+const onScroll=()=>{const H=innerHeight,y=scrollY;
+ bar.style.transform=`scaleX(${y/Math.max(1,document.documentElement.scrollHeight-H)})`;
+ document.documentElement.style.setProperty("--sy",y);
+ const s=y>20;nb.style.background=s?"rgba(5,6,25,.8)":"transparent";nb.style.backdropFilter=s?"blur(14px)":"none";nb.style.borderBottom=s?"1px solid var(--bd)":"1px solid transparent";
+ pains.forEach(p=>{const r=p.getBoundingClientRect(),d=Math.abs(r.top+r.height/2-H/2)/(H/2);p.style.opacity=clamp(1.2-d*1.1,.15,1);p.style.transform=`translateX(${clamp(d,0,1)*24}px)`});
+ const r=tl.getBoundingClientRect(),p=clamp((H*.7-r.top)/r.height,0,1);line.style.transform=`scaleY(${p})`;
+ steps.forEach((el,i)=>el.style.opacity=p>=i/steps.length+.04?1:.3);tick=false};
+addEventListener("scroll",()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+
+// Aparición, contadores y barras
+const count=el=>{const t=+el.dataset.count,d=+el.dataset.dec,s=el.dataset.suf,t0=performance.now();const f=n=>{const p=Math.min((n-t0)/1500,1);el.textContent=(t*(1-Math.pow(1-p,3))).toFixed(d)+s;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add("in");t.querySelectorAll("[data-count]").forEach(count);t.querySelectorAll(".bar").forEach(b=>b.style.width=b.dataset.w+"%");io.unobserve(t)}),{threshold:.2});
+document.querySelectorAll(".rv").forEach((el,i)=>{el.style.transitionDelay=(i%3)*100+"ms";io.observe(el)});
+document.querySelectorAll(".tile").forEach(t=>t.addEventListener("pointermove",e=>{const r=t.getBoundingClientRect();t.style.setProperty("--mx",e.clientX-r.left+"px");t.style.setProperty("--my",e.clientY-r.top+"px")}));
+
+// Formulario -> WhatsApp
+const F=$("#form");
+const rules={nombre:v=>v.trim().length>=3||"Ingresá tu nombre completo.",tel:v=>/^\d{8,15}$/.test(v.replace(/[\s\-+()]/g,""))||"Ingresá un número válido.",mail:v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim())||"Ingresá un email válido.",rubro:v=>!!v||"Elegí una opción.",inv:v=>!!v||"Elegí una opción."};
+const check=k=>{const r=rules[k](F[k].value);$(`[data-for="${k}"]`).textContent=r===true?"":r;F[k].setAttribute("aria-invalid",r!==true);return r===true};
+Object.keys(rules).forEach(k=>F[k].addEventListener("blur",()=>check(k)));
+F.addEventListener("submit",e=>{e.preventDefault();if(!Object.keys(rules).map(check).every(Boolean)){F.querySelector('[aria-invalid="true"]').focus();return}
+ const t=`Hola TEG, soy ${F.nombre.value.trim()}.\nNegocio: ${F.rubro.value}\nInversión en ads: ${F.inv.value}\nEmail: ${F.mail.value.trim()}${F.msg.value.trim()?"\nMi problema: "+F.msg.value.trim():""}`;
+ window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`,"_blank","noopener");$("#ok").classList.remove("hidden");F.reset()});
+</script>
+</body>
+</html>
